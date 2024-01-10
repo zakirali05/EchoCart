@@ -22,3 +22,6 @@
 ##### can access all the orders
 ##### can change delivery status 
 ##### can cancel the order
+
+
+##### (chatting functionality with admin in future)
