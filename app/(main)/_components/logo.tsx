@@ -17,7 +17,7 @@ const Logo = ({href,title}:LogoProps) => {
             height={50}
             width={50}
             />
-            <h1 className="font-bold text-lg hidden md:block">{title}</h1>
+            <h1 className="font-bold text-lg hidden md:block font-mono">{title}</h1>
         </div>
     </Link>
   )

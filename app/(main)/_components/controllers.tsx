@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { getUserFromId } from "@/lib/user-services";
 import { UserButton, currentUser } from "@clerk/nextjs";
-import { LayoutDashboard, ShoppingCart } from "lucide-react";
+import { LayoutDashboard, ShoppingCart, User2Icon } from "lucide-react";
 import Link from "next/link";
 
 const Controllers = async () => {
@@ -32,7 +32,7 @@ const Controllers = async () => {
           <Button
             asChild
             variant={"ghost"}
-            className="text-xm text-muted-foreground hover:text-black transition cursor-pointer"
+            className="text-xm text-muted-foreground hover:text-black transition cursor-pointer mr-1"
           >
             <Link
               href={"/cart"}
@@ -42,11 +42,13 @@ const Controllers = async () => {
               <span className="hidden md:block">Cart</span>
             </Link>
           </Button>
-          <UserButton afterSignOutUrl="/" />
+          <UserButton  afterSignOutUrl="/" />
         </div>
       ) : (
-        <Button asChild>
-          <Link href={"/sign-in"}>Login </Link>
+        <Button asChild >
+          <Link href={"/sign-in"} className="flex items-center gap-2 ">
+            <User2Icon className="h-4 w-4"/>
+            Login </Link>
         </Button>
       )}
     </div>

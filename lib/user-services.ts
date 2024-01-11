@@ -5,7 +5,7 @@ import { db } from "./db";
 export const getUserFromId = async (id: string | undefined) => {
   try {
     if (!id) {
-      throw new Error("id must be provided!");
+      return null
     }
 
     const user = await db.user.findUnique({
