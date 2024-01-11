@@ -1,6 +1,10 @@
+import { UserButton } from "@clerk/nextjs";
 
-export default function Home() {
+const  Home = () => {
   return (
-   <p>Hello EchoCart</p>
+   <p>Hello EchoCart <UserButton afterSignOutUrl="/"/></p>
+
   )
 }
+
+export default Home
