@@ -1,7 +1,10 @@
+import CarouselComp from "../_components/carousel"
 
 const  Home = () => {
   return (
-   <p>Hello EchoCart</p>
+   <main className="space-y-10 mt-5">
+    <CarouselComp/>
+   </main>
 
   )
 }

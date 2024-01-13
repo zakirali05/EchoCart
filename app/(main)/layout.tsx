@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/customComponents/max-width-wrapper";
-import Navbar from "./_components";
+import Navbar from "./_components/navbar";
 
 type ChildrenProps = {
   children: React.ReactNode;
